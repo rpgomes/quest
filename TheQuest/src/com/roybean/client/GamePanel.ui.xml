@@ -1,0 +1,61 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	.gameContainer {
+		background-color: transparent;
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+		float: left;
+	}
+	.imageContainer{
+	}
+	.labelTitle{
+		text-align: center;
+		margin: 4px;
+		font-family: Sans-serif;		
+	}
+	.labelShow{
+		height:20px; 
+	    width:100px; 
+	    margin: -20px -50px; 
+	    position:relative;
+	    top:50%; 
+   		left:50%;
+	}
+	.bottomBorder{
+		border-bottom: 2px solid #000000;
+	}
+	.guess{
+	}
+	.boxTitle{
+		float: right;
+	}
+	.buttonShow{
+		float: right;
+		margin-right: 45%;
+	}
+	
+	</ui:style>
+	
+	<g:FlowPanel ui:field="gamePanel" width="100%" height="100%" styleName="{style.gameContainer}">
+		<g:FlowPanel height="10%" styleName="{style.bottomBorder}">
+			<g:Label ui:field="labelTip" visible="false" styleName="{style.labelTitle}"/>
+			<g:Button ui:field="buttonShowTip" styleName="{style.labelShow}"> Show Tip</g:Button>
+			<g:SimplePanel height="20px"></g:SimplePanel>
+		</g:FlowPanel>
+		<g:SimplePanel width="100%" height="80%"  styleName="{style.imageContainer}" ui:field="imageContainer"/>	
+		<g:FlowPanel ui:field="panelShow" height="10%" styleName="{style.guess}">	
+			<g:Button ui:field="buttonGuess" styleName="{style.buttonShow}"> Guess </g:Button>
+			<g:TextBox ui:field="guessBox" styleName="{style.boxTitle}"/>		
+			
+			
+		</g:FlowPanel>
+	
+	</g:FlowPanel>
+<!-- 	<g:HTMLPanel> -->
+<!-- 		Hello, -->
+<!-- 		<g:Button styleName="{style.important}" ui:field="button" /> -->
+<!-- 	</g:HTMLPanel> -->
+</ui:UiBinder> 

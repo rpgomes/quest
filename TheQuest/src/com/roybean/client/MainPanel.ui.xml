@@ -1,0 +1,135 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.title {
+			background-color: white;
+			
+		}
+		
+		.titleLabel {
+			background-color: white;
+			text-align: center;
+			margin: 10px;
+			font-family: Sans-serif;
+			font-size: 250%;
+			border-bottom: 2px solid #000000;
+		}
+		
+		.buttonCSS{
+			margin: 6px;
+		}
+		
+		
+		.west {
+			background-color: green;
+		}
+		
+		.center {
+			background-color: red;
+		}
+		
+		.options{
+			background-color: blue;
+		}
+		
+		.searchBar{
+			background-color: white;
+			margin: 10px;
+			height: 25px;
+			width: 275px;			
+		}
+		
+		.searchButton{
+			width: 22px;
+			height: 15px;
+			background-color: transparent;
+			margin:4px;
+			margin-right:10px;
+			float: right;
+		}
+		
+		.searchBox{
+			width: 209px;
+			margin: 2px;
+			border: 1px solid black;
+		}
+		
+		.bottom{
+			background-color: black;
+		}
+		
+		.bannerImageCss{
+			float: left;
+			cursor: pointer;
+			background-color: black;
+		}
+		
+		.blogImageCss{
+			float: right;
+			background-color: black;
+			cursor: pointer;
+		}
+	</ui:style>
+
+	<g:DockLayoutPanel ui:field="mainDockPanel" width="100%" height="100%" unit='PX'>
+		<g:north size="70">
+			<g:SimplePanel ui:field="headerPanel" width="100%" height="100%" styleName="{style.title}">
+				<g:Label  styleName="{style.titleLabel}"> Find The Clues in The Enigmas! </g:Label>
+			</g:SimplePanel>
+		</g:north>
+		<g:north size="80">
+			<g:FlowPanel  ui:field="buttonContainer" width="100%" height="100%" >
+				<g:Button ui:field="button1" styleName="{style.buttonCSS}">Clue 1</g:Button>
+				<g:Button ui:field="button2" styleName="{style.buttonCSS}">Clue 2</g:Button>
+				<g:Button ui:field="button3" styleName="{style.buttonCSS}">Clue 3</g:Button>
+				<g:Button ui:field="button4" styleName="{style.buttonCSS}">Clue 4</g:Button>
+				<g:Button ui:field="button5" styleName="{style.buttonCSS}">Clue 5</g:Button>
+				<g:Button ui:field="button6" styleName="{style.buttonCSS}">Clue 6</g:Button>
+				<g:Button ui:field="button7" styleName="{style.buttonCSS}">Clue 7</g:Button>
+				<g:Button ui:field="button8" styleName="{style.buttonCSS}">Clue 8</g:Button>
+				<g:Button ui:field="button9" styleName="{style.buttonCSS}">Clue 9</g:Button>
+				<g:Button ui:field="button10" styleName="{style.buttonCSS}">Clue 10</g:Button>
+				<g:Button ui:field="button11" styleName="{style.buttonCSS}">Clue 11</g:Button>
+				<g:Button ui:field="button12" styleName="{style.buttonCSS}">Clue 12</g:Button>
+				<g:Button ui:field="button13" styleName="{style.buttonCSS}">Clue 13</g:Button>
+				<g:Button ui:field="button14" styleName="{style.buttonCSS}">Clue 14</g:Button>
+				<g:Button ui:field="button15" styleName="{style.buttonCSS}">Clue 15</g:Button>
+				<g:Button ui:field="button16" styleName="{style.buttonCSS}">Clue 16</g:Button>
+				
+				<g:Button ui:field="button17" styleName="{style.buttonCSS}">Clue 17</g:Button>
+				<g:Button ui:field="button18" styleName="{style.buttonCSS}">Clue 18</g:Button>
+				<g:Button ui:field="button19" styleName="{style.buttonCSS}">Clue 19</g:Button>
+				<g:Button ui:field="button20" styleName="{style.buttonCSS}">Clue 20</g:Button>
+				
+				<g:Button ui:field="button21" styleName="{style.buttonCSS}">Clue 21</g:Button>
+				<g:Button ui:field="button22" styleName="{style.buttonCSS}">Clue 22</g:Button>
+				<g:Button ui:field="button23" styleName="{style.buttonCSS}">Clue 23</g:Button>
+				
+				<g:Button ui:field="button24" styleName="{style.buttonCSS}">Clue 24</g:Button>
+				<g:Button ui:field="button25" styleName="{style.buttonCSS}">Clue 25</g:Button>
+				<g:Button ui:field="button26" styleName="{style.buttonCSS}">Clue 26</g:Button>
+				
+				<g:Button ui:field="button27" styleName="{style.buttonCSS}">Clue 27</g:Button>
+				<g:Button ui:field="button28" styleName="{style.buttonCSS}">Clue 28</g:Button>
+				<g:Button ui:field="button29" styleName="{style.buttonCSS}">Clue 29</g:Button>
+				<g:Button ui:field="button30" styleName="{style.buttonCSS}">Clue 30</g:Button>
+				
+			</g:FlowPanel>
+<!-- 			<g:SimplePanel ui:field="buttonContainer" width="100%" height="100%" styleName="{style.title}"> -->
+<!-- 				<g:Label  styleName="{style.titleLabel}"> Find The Clues in The Enigmas! </g:Label> -->
+<!-- 			</g:SimplePanel> -->
+		</g:north>
+		<g:south size="100">
+			<g:FlowPanel ui:field="inanimeshadow" width="100%" height="100%" styleName="{style.bottom}">
+				<g:Image ui:field="bannerImage" height="100%" width="80%" styleName="{style.bannerImageCss}"/>
+				<g:Image ui:field="blogImage" height="100%" width="20%" styleName="{style.blogImageCss}"/>
+			</g:FlowPanel>
+		</g:south>
+		
+		<g:center>
+			<g:SimplePanel ui:field="center" width="100%" height="100%" styleName="{style.title}" />
+
+		</g:center>
+	</g:DockLayoutPanel>
+</ui:UiBinder> 
